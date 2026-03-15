@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Tajawal', ui-sans-serif, system-ui, sans-serif;
+  --color-brand-dark: #0f172a; /* لون كحلي داكن فاخر */
+  --color-brand-blue: #2563eb; /* أزرق تكنولوجي */
+  --color-brand-accent: #f59e0b; /* برتقالي/ذهبي للأزرار الهامة */
+  --color-datalynx-dark: #020617;
+  --color-datalynx-primary: #3b82f6;
+  --color-lex-gold: #fbbf24;
+  --color-lex-success: #10b981;
+}
+
+/* إضافة أنيميشن للـ Dashboard Preview */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.float-animation { animation: float 4s ease-in-out infinite; }
+
+html, body, #root {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+
+
+
+  
+
+
