@@ -26,14 +26,36 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        {/* Logo Section */}
-        <div className="flex items-center gap-2 group cursor-pointer">
-          {/* 1. Data Lynx Icon */}
-            <div className="group relative w-20 h-20 sm:w-20 sm:h-20 md:w-20 md:h-20 bg-slate-900 border border-white/10 rounded-[2.5rem] p-3 flex items-center justify-center shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:border-datalynx-primary/50">
-               <img src="/logo.png" alt="Data Lynx" className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
-            </div>
+        {/* Logo Section (تم استبدال الصورة بحرفي D و L مع تأثير حركي وميل عصري) */}
+        <div className="flex items-center gap-3 group cursor-pointer">
+          {/* الحاوية الخارجية للشعار - مقاسات متجاوبة */}
+          <div
+            aria-label="Data Lynx logo"
+            className={`nav-logo relative flex items-center justify-center rounded-xl select-none
+              w-10 h-10 md:w-14 md:h-14 p-1
+              ${isScrolled ? 'bg-slate-800' : 'bg-slate-900' }
+              transform -rotate-6 hover:rotate-0 transition-transform duration-500`}
+            role="img"
+          >
+            {/* الحروف D و L متداخلتان لعمل مونوغرام حديث */}
+            <span className="absolute left-1/4 md:left-3/10 text-sm md:text-lg font-extrabold leading-none tracking-tight
+              bg-clip-text text-transparent bg-gradient-to-r from-datalynx-primary to-blue-400"
+            >
+              D
+            </span>
+            <span className="absolute right-1/4 md:right-3/10 text-sm md:text-lg font-extrabold leading-none tracking-tight
+              text-white opacity-90 transform rotate-12"
+            >
+              L
+            </span>
+          </div>
+
           <div className="flex flex-col">
-            <span className={`text-xl font-black tracking-tight leading-none ${isScrolled ? 'text-datalynx-dark' : 'text-datalynx-dark md:text-white'}`}>
+            <span className={`text-xl font-black tracking-tight leading-none transition-colors duration-300 ${
+              isScrolled 
+                ? 'text-datalynx-dark' // عند السكرول: أسود على الكل
+                : 'text-white md:text-white' // الحالة العادية: أبيض على الموبايل وأبيض على الشاشات الكبيرة
+            }`}>
               Data<span className="text-datalynx-primary">Lynx</span>
             </span>
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Software Solutions</span>
@@ -62,14 +84,17 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-datalynx-dark p-2"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <div className="w-6 h-0.5 bg-current mb-1.5 transition-all"></div>
-          <div className="w-6 h-0.5 bg-current mb-1.5"></div>
-          <div className="w-4 h-0.5 bg-current"></div>
-        </button>
+      <button 
+        className={`md:hidden p-2 transition-colors duration-300 ${
+          isScrolled ? 'text-datalynx-dark' : 'text-white'
+        }`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {/* استخدمت bg-current لكي تأخذ الخطوط لون النص المختار في الأعلى */}
+        <div className={`w-6 h-0.5 bg-current mb-1.5 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+        <div className={`w-6 h-0.5 bg-current mb-1.5 ${isOpen ? 'opacity-0' : ''}`}></div>
+        <div className={`w-4 h-0.5 bg-current ml-auto ${isOpen ? '-rotate-45 -translate-y-2 w-6' : ''}`}></div>
+      </button>
       </div>
 
       {/* Mobile Menu Dropdown */}
@@ -96,6 +121,23 @@ export default function Navbar() {
           </a>
         </div>
       </div>
+
+      {/* CSS صغيرة داخل الكمبوننت لتأثير العوم الخفيف (floating) */}
+      <style>{`
+        .nav-logo { 
+          animation: navFloat 4s ease-in-out infinite;
+        }
+        @keyframes navFloat {
+          0% { transform: translateY(0) rotate(-6deg); }
+          50% { transform: translateY(-4px) rotate(-6deg); }
+          100% { transform: translateY(0) rotate(-6deg); }
+        }
+        /* تعديل مواقع الحروف الدقيقة ليتناسب العرض على breakpoints */
+        @media (min-width: 768px) {
+          .nav-logo span:first-child { left: 28%; }
+          .nav-logo span:last-child { right: 28%; }
+        }
+      `}</style>
     </nav>
   )
 }

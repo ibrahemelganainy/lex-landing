@@ -51,9 +51,9 @@ export default function LexAiSection() {
   return (
     <section id="lex-ai" className="py-24 bg-slate-900 relative overflow-hidden">
       {/* خلفية جمالية تعبر عن الذكاء الاصطناعي */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-      
+      {/* <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+       */}
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-right" dir="rtl">
         <div className="text-center mb-20">
           <div className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-white/10 rounded-full mb-6 backdrop-blur-sm">
@@ -72,19 +72,19 @@ export default function LexAiSection() {
           
           {/* قسم بطاقة الـ AI (الجانب الأيمن/الرئيسي) */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-[2.5rem] blur-xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
             <div className="relative bg-slate-800/50 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-10 overflow-hidden h-full flex flex-col justify-center">
               
               <FontAwesomeIcon icon={faRobot} className="absolute -bottom-10 -left-10 text-[15rem] text-white/5 -rotate-12 group-hover:text-blue-500/10 transition-colors duration-500" />
               
               <div className="relative z-10 text-center">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.5)] p-0.5 mb-8 hover:scale-110 transition-transform duration-500">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.2)] p-0.5 mb-8 hover:scale-110 transition-transform duration-500">
                 <div className="w-full h-full bg-slate-900 rounded-2xl flex items-center justify-center p-2">
                     {/* ضع مسار اللوجو الصحيح هنا */}
                     <img 
-                    src="/ai2.png" 
+                    src={`${import.meta.env.BASE_URL}ai2.png`} 
                     alt="Lex AI Pro Logo" 
-                    className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]" 
+                    className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.03)]" 
                     />
                 </div>
                 </div>
@@ -94,7 +94,7 @@ export default function LexAiSection() {
                   "صياغة قانونية محكمة، بضغطة زر. مساعدك الذي لا ينام ولا يخطئ."
                 </p>
 
-                <button className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-3 group/btn">
+                <button className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all flex items-center justify-center gap-3 group/btn">
                   <FontAwesomeIcon icon={faBolt} className="group-hover/btn:animate-bounce" />
                   جرب المساعد الذكي الآن
                 </button>

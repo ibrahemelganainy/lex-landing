@@ -14,132 +14,132 @@ const screenshots = [
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen1.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen1.png` // استبدلها بمسار صورك
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen12.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen12.png` // استبدلها بمسار صورك
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen2.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen2.png` // استبدلها بمسار صورك
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen13.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen13.png` // استبدلها بمسار صورك
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen1.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen1.png` // استبدلها بمسار صورك
   },
   {
     title: "المساعد الذكي Lex AI",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen8.png"
+    img: `${import.meta.env.BASE_URL}screen8.png`
   },
   {
     title: "المساعد الذكي Lex AI",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen26.png"
+    img: `${import.meta.env.BASE_URL}screen26.png`  
   },
   {
     title: "المساعد الذكي Lex AI",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen9.png"
+    img: `${import.meta.env.BASE_URL}screen9.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen3.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen3.png` // استبدلها بمسار صورك
   },
   {
     title: "الاجندة والمواعيد",
     desc: "تنظيم احترافي لكافة تفاصيل القضية، الجلسات، والمستندات المرتبطة.",
-    img: "/screen4.png"
+    img: `${import.meta.env.BASE_URL}screen4.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen14.png"
+    img: `${import.meta.env.BASE_URL}screen14.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "نظام أرشفة متطور يتيح لك الوصول لأي مستند خلال ثوانٍ معدودة.",
-    img: "/screen15.png"
+    img: `${import.meta.env.BASE_URL}screen15.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen7.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen7.png` // استبدلها بمسار صورك
   },
   {
     title: "الاجندة والمواعيد",
     desc: "تنظيم احترافي لكافة تفاصيل القضية، الجلسات، والمستندات المرتبطة.",
-    img: "/screen6.png"
+    img: `${import.meta.env.BASE_URL}screen6.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen5.png"
+    img: `${import.meta.env.BASE_URL}screen5.png`
   },
   {
     title: "الاجندة والمواعيد",
     desc: "نظام أرشفة متطور يتيح لك الوصول لأي مستند خلال ثوانٍ معدودة.",
-    img: "/screen16.png"
+    img: `${import.meta.env.BASE_URL}screen16.png`
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen17.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen17.png` // استبدلها بمسار صورك
   },
   {
     title: "إدارة ملف القضايا",
     desc: "تنظيم احترافي لكافة تفاصيل القضية، الجلسات، والمستندات المرتبطة.",
-    img: "/screen18.png"
+    img: `${import.meta.env.BASE_URL}screen18.png`
   },
   {
     title: "المساعد الذكي Lex AI",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen19.png"
+    img: `${import.meta.env.BASE_URL}screen19.png`
   },
   {
     title: "الأرشفة الرقمية",
     desc: "نظام أرشفة متطور يتيح لك الوصول لأي مستند خلال ثوانٍ معدودة.",
-    img: "/screen20.png"
+    img: `${import.meta.env.BASE_URL}screen20.png`
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen21.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen21.png` // استبدلها بمسار صورك
   },
   {
     title: "إدارة ملف القضايا",
     desc: "تنظيم احترافي لكافة تفاصيل القضية، الجلسات، والمستندات المرتبطة.",
-    img: "/screen22.png"
+    img: `${import.meta.env.BASE_URL}screen22.png`
   },
   {
     title: "المساعد الذكي Lex AI",
     desc: "واجهة محادثة ذكية لتوليد المذكرات القانونية وصياغة العقود.",
-    img: "/screen23.png"
+    img: `${import.meta.env.BASE_URL}screen23.png`
   },
   {
     title: "الأرشفة الرقمية",
     desc: "نظام أرشفة متطور يتيح لك الوصول لأي مستند خلال ثوانٍ معدودة.",
-    img: "/screen24.png"
+    img: `${import.meta.env.BASE_URL}screen24.png`
   },
   {
     title: "لوحة التحكم الرئيسية",
     desc: "نظرة شاملة على القضايا، المواعيد، وإحصائيات المكتب في شاشة واحدة.",
-    img: "/screen25.png" // استبدلها بمسار صورك
+    img: `${import.meta.env.BASE_URL}screen25.png` // استبدلها بمسار صورك
   },
   {
     title: "إدارة ملف القضايا",
     desc: "تنظيم احترافي لكافة تفاصيل القضية، الجلسات، والمستندات المرتبطة.",
-    img: "/screen11.png"
+    img: `${import.meta.env.BASE_URL}screen11.png`
   }
 ];
 
@@ -165,7 +165,8 @@ export default function SystemSlider() {
             effect="fade"
             spaceBetween={30}
             slidesPerView={1}
-            autoplay={{ delay: 5000 }}
+            autoplay={{ delay: 3000 }}
+            lazyPreloadPrevNext={2}
             pagination={{ clickable: true, el: '.custom-pag' }}
             navigation={{ nextEl: '.next-btn', prevEl: '.prev-btn' }}
             className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5"
@@ -189,10 +190,19 @@ export default function SystemSlider() {
 
                   {/* Image Container */}
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-950 border-x border-b border-white/10 rounded-b-xl shadow-inner">
+                  {/* 3. مؤشر التحميل يظهر خلف الصورة */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-slate-900">
+                        <div className="w-10 h-10 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
+                    </div>
                     <img 
                       src={item.img} 
                       alt={item.title} 
-                      className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                      loading="lazy"
+                      className="w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                      onLoad={(e) => {
+                        e.currentTarget.classList.remove('opacity-0');
+                        e.currentTarget.classList.add('opacity-90');
+                      }}
                     />
                   </div>
 

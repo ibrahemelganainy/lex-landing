@@ -29,16 +29,36 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           
-          {/* العمود الأول: هوية الشركة */}
+          {/* العمود الأول: هوية الشركة (استبدال الصورة بحروفي D و L مع التأثير نفسه) */}
+          {/* العمود الأول: هوية الشركة (دائرة بدل المربع، مع نفس تأثير العوم) */}
           <div className="col-span-1 lg:col-span-1 text-right">
             <div className="flex items-center gap-3 mb-6">
-              <div className="group relative w-20 h-20 sm:w-20 sm:h-20 md:w-20 md:h-20 bg-slate-900 border border-white/10 rounded-[2.5rem] p-3 flex items-center justify-center shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:border-datalynx-primary/50">
-               <img src="/logo.png" alt="Data Lynx" className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
+              {/* شعار DL بنفس شكل الناف بار (مربع مائل) */}
+              <div
+                aria-label="Data Lynx logo"
+                className="nav-logo relative flex items-center justify-center rounded-xl select-none
+              w-10 h-10 md:w-14 md:h-14 p-1 bg-slate-900
+                transform -rotate-6 hover:rotate-0 transition-transform duration-500"
+                role="img"
+              >
+                {/* حرف D */}
+                <span className="absolute left-1/4 md:left-3/10 text-sm md:text-lg font-extrabold leading-none tracking-tight
+              bg-clip-text text-transparent bg-gradient-to-r from-datalynx-primary to-blue-400">
+                  D
+                </span>
+
+                {/* حرف L */}
+                <span className="absolute right-1/4 md:right-3/10 text-sm md:text-lg font-extrabold leading-none tracking-tight
+              text-white opacity-90 transform rotate-12">
+                  L
+                </span>
               </div>
+
               <h2 className="text-2xl font-black text-white tracking-tighter">
                 Data<span className="text-datalynx-primary">Lynx</span>
               </h2>
             </div>
+
             <p className="text-sm leading-relaxed mb-8 opacity-80">
               نحن في داتا لينكس نبتكر حلولاً برمجية ذكية تتجاوز التوقعات. نركز على تمكين المكاتب القانونية بأدوات تكنولوجية تضمن الكفاءة، السرية، والنمو المستدام.
             </p>
@@ -46,12 +66,6 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61562579024299" target="_blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-datalynx-primary hover:text-white hover:border-datalynx-primary transition-all duration-300">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              {/* <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-datalynx-primary hover:text-white hover:border-datalynx-primary transition-all duration-300">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-datalynx-primary hover:text-white hover:border-datalynx-primary transition-all duration-300">
-                <FontAwesomeIcon icon={faXTwitter} />
-              </a> */}
             </div>
           </div>
 

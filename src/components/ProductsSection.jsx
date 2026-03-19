@@ -54,7 +54,7 @@ export default function ProductsSection() {
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center gap-6 mb-8">
                 <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-2xl bg-white shadow-xl p-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <img src="/lex_office_logo.png" alt="Lex Office Logo" className="w-full h-full object-contain" />
+                  <img src={`${import.meta.env.BASE_URL}lex_office_logo.png`} alt="Lex Office Logo" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <h4 className="text-3xl font-black text-datalynx-dark mb-1 tracking-tight">Lex Office</h4>
@@ -91,7 +91,7 @@ export default function ProductsSection() {
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center gap-6 mb-8">
                 <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-2xl bg-white shadow-xl p-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <img src="/logo1.png" alt="Lex Calendar Logo" className="w-full h-full object-contain" />
+                  <img src={`${import.meta.env.BASE_URL}logo1.png`} alt="Lex Calendar Logo" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <h4 className="text-3xl font-black text-datalynx-dark mb-1 tracking-tight">Lex Calendar</h4>
