@@ -16,7 +16,7 @@ export default function PrivacySection() {
           <div className="grid grid-cols-2 gap-6">
             <div className="border-r-2 border-datalynx-primary pr-4">
               <h4 className="font-bold text-white uppercase text-xs tracking-widest mb-2">تراخيص آمنة</h4>
-              <p className="text-sm text-slate-400">إدارة التراخيص عبر Supabase لضمان حقوقك.</p>
+              <p className="text-sm text-slate-400">إدارة تراخيص امنة لضمان حقوقك.</p>
             </div>
             <div className="border-r-2 border-lex-gold pr-4">
               <h4 className="font-bold text-white uppercase text-xs tracking-widest mb-2">نسخ احتياطي</h4>

@@ -14,15 +14,16 @@ import {
   faChartPie, 
   faMagnifyingGlass, 
   faClipboardList, 
+  faMoneyBill,
   faShieldHalved,
   faCheckCircle
 } from '@fortawesome/free-solid-svg-icons'
 
 const allFeatures = [
   {
-    title: 'المساعد القانوني الذكي',
-    desc: 'مساعد قانوني ذكي Lex Ai pro 2.5 لديه القدرة علي توليد النماذج والصيغ القانونية بدقة عالية وسرعة البرق مع دعم كامل للغة القانونية.',
-    icon: faBrain,
+    title: 'بدون إشتراك شهري أو سنوي',
+    desc: 'إدفع مرة واحدة وامتلك نسختك من النظام للأبد، مع تحديثات مجانية مدى الحياة.',
+    icon: faMoneyBill,
     color: 'text-yellow-600',
     bgColor: 'bg-yellow-50'
   },
