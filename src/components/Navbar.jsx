@@ -14,7 +14,7 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: 'الرئيسية', href: 'www.datalynx.space' },
+    { name: 'الرئيسية', href: 'https://datalynx.space' },
     { name: 'المنتجات', href: '#products' },
     { name: 'المميزات', href: '#features' },
     { name: 'الخصوصية', href: '#privacy' },
